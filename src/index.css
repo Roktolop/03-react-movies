@@ -15,11 +15,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  /* горизонтальне центрування */
-  align-items: center;
-  /* вертикальне центрування */
   min-width: 320px;
   min-height: 100vh;
 }
