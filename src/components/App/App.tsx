@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import css from './App.module.css'
-import fetchMovies from '../../servieces/movieService.tsx'
+import fetchMovies from '../../services/movieService.tsx'
 import SearchBar from '../SearchBar/SearchBar.tsx'
 import MovieGrid from '../MovieGrid/MovieGrid'
 import Loader from '../Loader/Loader'
