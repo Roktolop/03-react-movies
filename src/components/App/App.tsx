@@ -11,7 +11,7 @@ import { Toaster } from 'react-hot-toast';
 import toast from 'react-hot-toast';
 
 function App() {
-  const [selectedMovie, setSelectedMovie] = useState<Movie>({} as Movie);
+  const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
   const [movies, setMovies] = useState<Movie[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -58,7 +58,7 @@ function App() {
       <div className={css.app}>
         <Toaster />
         <SearchBar onSubmit={handleSubmit}></SearchBar>
-        {loading && <Loader></Loader>}
+        {loading && <Loader message='Loading movies, please wait...'></Loader>}
         {error ? (<ErrorMessage></ErrorMessage>) : (
           movies.length > 0 && <MovieGrid onSelect={handleClick} movies={movies}></MovieGrid>
         )}
