@@ -3,7 +3,7 @@ import type { Movie }  from "../types/movie";
 
 const API_KEY = import.meta.env.VITE_TMDB_TOKEN;
 
-interface fetchMoviesOps {
+export interface fetchMoviesOps {
   query: string;
   adult?: boolean;
 }
