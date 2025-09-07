@@ -18,7 +18,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  const handleSubmit = async(query: string) => {
+  const handleSubmit = async (query: string) => {
     setMovies([]);
     setLoading(true);
     setError(false);
